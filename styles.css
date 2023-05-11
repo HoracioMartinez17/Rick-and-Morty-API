@@ -1,0 +1,61 @@
+.main-background {
+    background-image: url("./backgroud-rick-and-morty.jpg");
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #97ce4c;
+}
+.h2-episode-title {
+    display: inline-block;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.54);
+    color:#F0E14A;
+    border-radius: 1rem;
+}
+
+.p-episode-title {
+    display: inline-block;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.67);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(251, 162, 117);
+    border-radius: 1rem;
+}
+
+.navbar {
+    background-color:#F0E14A ;
+}
+.nav-item a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #943e1c;
+  }
+  .header-icono-svg {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .sidebar-column {
+    background-color:#e89ac7 ;
+     min-width: 280px;
+  }
+
+  .img-main-containers {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .card-text {
+    font-weight: 600;
+    color: #631f04;
+  }
+  
+  .brand-text {
+    padding-inline: 1rem;
+    font-weight: 600;
+      font-size: 1.5rem;
+      color: #44281d;
+  }
+  
+  
