@@ -20,6 +20,7 @@ let resultsPage = 1;
 let displayedCharacters = [];
 let charactersLoaded = 0;
 const residentsPerPage = 20;
+
 function loadEpisodes() {
 	fetch(`${ApiUrl}/episode?page=${episodesPage}`)
 		.then((response) => response.json())
@@ -131,7 +132,7 @@ function loadMoreCards() {
 					species.textContent = `Specie: ${data.species}`;
 					const gender = document.createElement("p");
 					gender.classList.add("card-text");
-					gender.textContent = `Specie: ${data.gender}`;
+					gender.textContent = `Gender: ${data.gender}`;
 					status.classList.add("card-text");
 					status.textContent = `Status: ${data.status}`;
 					cardBody.appendChild(title);
