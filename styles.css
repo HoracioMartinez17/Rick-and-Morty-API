@@ -1,5 +1,5 @@
 .main-background {
-	background-image: url("./img/backgroud-rick-and-morty.jpg");
+	background-image: url("/img/backgroud-rick-and-morty.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -18,25 +18,41 @@
 	background-color: rgba(0, 0, 0, 0.67);
 	font-size: 1.5rem;
 	font-weight: 600;
-	color: rgb(255,22,110);
+	color: rgb(255, 22, 110);
 	border-radius: 1rem;
 }
 .card {
-    background-color: red; /* Cambiar el color de fondo */
-  }
-  
-  .card.shadow-sm {
-    background-color: rgba(0, 0, 0, 0.961); /* Anular la propiedad background-color */
-  }
-  
+	background-color: red; /* Cambiar el color de fondo */
+}
+
+.card.shadow-sm {
+	background-color: rgba(
+		0,
+		0,
+		0,
+		0.961
+	); /* Anular la propiedad background-color */
+}
 
 .navbar {
-	background-color: rgb(255,210,195);
+	background-color: rgb(255, 210, 195);
 }
-.nav-item a {
-	font-size: 1.5rem;
+.header-div-btns {
+	display: flex;
+	gap: 2rem;
+	border: none;
+}
+.header-btn-nav {
+	font-size: 1.3rem;
 	font-weight: 500;
 	color: #943e1c;
+	border: none;
+	background-color: rgb(255, 210, 195);
+	transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.header-btn-nav:hover {
+	transform: scale(1.2);
+	color: #ff0909a7;
 }
 .header-icono-svg {
 	height: 5rem;
@@ -48,15 +64,14 @@
 	min-width: 280px;
 }
 
-.img-main-containers {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+.img-container {
+	display: flex;
+	justify-content: center;
 }
 
 .card-text {
 	font-weight: 600;
-	color: rgb(255,210,195);
+	color: rgb(45, 18, 9);
 }
 
 .brand-text {
@@ -64,4 +79,86 @@
 	font-weight: 600;
 	font-size: 1.5rem;
 	color: #44281d;
+}
+
+.color-green {
+	background-color: #3f7d20;
+}
+
+.alig li:hover {
+	background-color: rgba(63, 125, 32, 0.4);
+}
+
+.alig li.active {
+	background-color: rgba(63, 125, 32, 0.8);
+}
+
+.alig li.nav-item {
+	background-color: transparent;
+	padding: 0;
+}
+
+.alig li.nav-item a {
+	color: white;
+}
+
+.alig li.nav-item a:hover {
+	color: white;
+}
+
+.card {
+	background-color: #d1f2c5;
+	border-radius: 15px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+	transform: scale(1.02);
+	transition: transform 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.card-img-top {
+	height: 5rem;
+	width: 5rem;
+	object-fit: contain;
+	border-radius: 50%;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.card-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.card-img-top {
+	height: 200px;
+	object-fit: cover;
+}
+.card-planet {
+	font-weight: bold;
+	color: #44281d;
+}
+
+@media screen and (max-width: 575px) {
+	.container-cards {
+		padding: 0;
+	}
+
+	.card {
+		width: 100%;
+	}
+
+	.card-img-top {
+		height: 4rem;
+		width: 4rem;
+	}
 }
